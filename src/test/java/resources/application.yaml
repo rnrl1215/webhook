@@ -1,0 +1,5 @@
+spring:
+  webhook:
+    slack:
+      base-url: 'https://hooks.slack.com/services'
+      alarm-path: '/T04KV4NG2FL/B04LMQTLARE/tXM48qlFJDvTJU9zytmmKL4W'
