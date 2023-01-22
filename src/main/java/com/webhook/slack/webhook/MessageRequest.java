@@ -1,4 +1,4 @@
-package com.webhhook.slack.webhook;
+package com.webhook.slack.webhook;
 
 
 import lombok.Builder;

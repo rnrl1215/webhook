@@ -1,4 +1,4 @@
-package com.webhhook.webclient;
+package com.webhook.webclient;
 
 public abstract class WebclientAbstract <T> {
     abstract public void initWebclient(String baseURL);

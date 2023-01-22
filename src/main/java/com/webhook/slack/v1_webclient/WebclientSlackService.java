@@ -1,10 +1,10 @@
-package com.webhhook.slack.v1_webclient;
+package com.webhook.slack.v1_webclient;
 
-import com.webhhook.slack.webhook.MessageRequest;
-import com.webhhook.slack.webhook.Webhook;
-import com.webhhook.webclient.RequestType;
-import com.webhhook.webclient.WebClientBase;
-import com.webhhook.webclient.WebClientFactory;
+import com.webhook.slack.webhook.MessageRequest;
+import com.webhook.slack.webhook.Webhook;
+import com.webhook.webclient.RequestType;
+import com.webhook.webclient.WebClientBase;
+import com.webhook.webclient.WebClientFactory;
 import org.springframework.stereotype.Service;
 
 @Service

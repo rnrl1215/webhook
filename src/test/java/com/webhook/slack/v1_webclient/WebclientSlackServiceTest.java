@@ -1,6 +1,6 @@
-package com.webhhook.slack.v1_webclient;
+package com.webhook.slack.v1_webclient;
 
-import com.webhhook.slack.webhook.MessageRequest;
+import com.webhook.slack.webhook.MessageRequest;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.client.WebClient;

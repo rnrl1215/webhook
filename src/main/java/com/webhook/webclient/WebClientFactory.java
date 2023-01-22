@@ -1,6 +1,6 @@
-package com.webhhook.webclient;
+package com.webhook.webclient;
 
-import com.webhhook.slack.webhook.MessageRequest;
+import com.webhook.slack.webhook.MessageRequest;
 public class WebClientFactory {
 
     public static WebClientBase getWebClient(RequestType requestType) {
