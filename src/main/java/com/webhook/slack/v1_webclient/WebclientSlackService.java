@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class WebclientSlackService implements Webhook {
 
+    // TODO: yaml 로 옮겨야함.
     private String baseURL = "https://hooks.slack.com/services";
     private String alarmPath = "/T04KV4NG2FL/B04LMQTLARE/tXM48qlFJDvTJU9zytmmKL4W";
 

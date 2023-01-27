@@ -4,6 +4,9 @@ import com.webhook.slack.webhook.MessageRequest;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.client.WebClient;
+import org.yaml.snakeyaml.util.ArrayUtils;
+
+import java.util.Arrays;
 
 class WebclientSlackServiceTest {
     WebclientSlackService slackService;
@@ -17,21 +20,9 @@ class WebclientSlackServiceTest {
 
     @Test
     public void simpleTest() {
-        WebClient webclient = WebClient.builder()
-                .baseUrl("https://hooks.slack.com/services")
-                .build();
 
-        MessageRequest message = MessageRequest.builder()
-                .text("알림 테스트")
-                .build();
+        String[] version = {"0.91","1.999999","1.2.3", "2.2", "3", "2.8", "2.7.1", "1.23.1","3.1.0","3.1.1","31"};
+        Arrays.sort(version);
 
-        webclient.post()
-                .uri("/T04KV4NG2FL/B04LMQTLARE/tXM48qlFJDvTJU9zytmmKL4W")
-                .contentType(MediaType.APPLICATION_JSON)
-                .bodyValue(message)
-                .accept(MediaType.APPLICATION_JSON)
-                .retrieve()
-                .bodyToMono(String.class)
-                .block();
     }
 }
